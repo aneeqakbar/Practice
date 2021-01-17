@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100%;
+    height: 600px;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex ;
+    justify-content: space-around;
+}
+
+    .box{
+        margin:0;
+        width:150px;
+        height:150px;
+        background-color:tomato;
+        border:2px solid rgb(0, 60, 255);
+    }
+
+        #box-1{
+            /* keeps the space consumed by box but visually make it disappear */
+            visibility: hidden;
+        }
+
+        #box-2{
+            /* makes the box to disappear even the space consumed by it (comepletely make it gone) */
+            display:none;
+        }
+        .container li{
+            list-style: none;
+        }        
+        .container > div{
+            /* directly select the divs just inside .container not in other element inside .container */
+            border: 2px solid black;
+        }
+        
+        .container + p {
+            /* only works if the box is right after div, (the very first sibling of div)*/
+            border:2px solid red;
+        } 
+input{
+    display: blockj;
+}
+input[type='text']{
+    padding:5px;
+    border:2px solid rgb(0, 17, 255);
+    font-size: 15px;
+}
+
+input[type="email"]{
+    border: 2px solid teal;
+    padding:10px;
+    font-size:10px;
+}
+input:nth-child(3){
+    border:2px solid red;
+    padding 5px 20px;
+}
+input[type="button"]{
+    padding:20px;
+    background-color: teal;
+}

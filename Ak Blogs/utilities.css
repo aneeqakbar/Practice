@@ -1,0 +1,12 @@
+.width-90{
+    width: 90vw;
+    margin: auto;
+}
+
+.flex{
+    display: flex; justify-content: center; align-items: center;
+}
+
+.col{
+    display:flex;
+}

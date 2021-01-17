@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/gym.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+<body>
+    
+    <!-- TOP HEADER -->
+
+    <header class="header">
+        <div class="logo">
+            <a href="#"><img src="img/Gym-Free-Download-PNG.png" alt="Logo">
+            <h2>GYMISTI</h2></a>
+        </div>
+
+        <div class="details">
+            <ul class="dtls-list">
+                <li>CALL US: + 1 800-567-8990</li>
+                <li>WRITE US: OFFICE@EXAMPLE.COM</li>
+                <li>OPENING TIMES: MON - FRI: 9:00 - 19:00</li>
+            </ul>
+        </div>
+        
+        <div class="header-btn">
+            <a href="#" class="ahov">Join Us</a>
+        </div>
+    </header>
+
+    <!-- SLIDESHOW -->
+
+    <div class="slideshow-container">
+        
+        <!-- NAVBAR -->
+
+        <navbar class="navbar">
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CLASSES</a></li>
+                <li><a href="#">PAGES</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+            <a href="#" class="fa fa-instagram"></a>
+            <a href="#" class="fa fa-facebook"></a>
+            <a href="#" class="fa fa-twitter"></a>
+            <a href="#" class="fa fa-linkedin"></a>
+        </navbar>
+
+        <!-- MID TEXT OVERLAY -->
+
+        <section class="hov-text">
+            <p><span>Welcome To GYMISTI</span>Just bear it till the end, Cross your limits and smash it back on their faces..</p>
+            <a href="#" class="ahov">Read More</a>
+        </section>
+
+        <!-- IMAGES SLIDE WITH CAPTIONS -->
+
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+            
+                  <img src="img/img_nature_wide.jpg" style="width:100%;">
+                
+
+                <div class="text">Be Patient</div>
+            </div>
+            
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              
+                <img src="img/img_snow_wide.jpg" style="width:100%">
+
+              <div class="text">Keep Grinding</div>
+            </div>
+            
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              
+                <img src="img/img_mountains_wide.jpg" style="width:100%; opacity: 1;">
+
+              <div class="text">You have to prove them wrong!</div>
+            </div>
+                <!-- BUTTONS -->
+            <a class="prev" onclick="plusSlides(-1)">&#x2190;</a>
+            <a class="next" onclick="plusSlides(1)">&#x2192;</a>                                        
+        </div> 
+        
+<div class="section1">
+    <div class="img-cont">
+        <img id="img1" src="img/1 (2).jpg" >
+        <img id="img2" src="img/1 (1).jpg" >
+        <img id="img3" src="img/1 (3).jpg" >
+    </div>
+    <div class="sec-left1">
+
+        <img src="img/Gym-Free-Download-PNG.png" style="width: 100px; height: 80px;">
+        
+        <h2>WELCOME TO GYMINI</h2>
+        
+        <p>"What Hurts Today Makes You Strong Tommorrow"</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem odit ipsa, atque sunt obcaecati quibusdam aspernatur corrupti reprehenderit. Debitis odit veritatis, quo deserunt harum perferendis nostrum voluptatem itaque iste dolores?</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Autem odit ipsa, atque sunt obcaecati quibusdam aspernatur corrupti reprehenderit. Debitis odit veritatis, quo deserunt harum perferendis nostrum voluptatem itaque iste dolores?</p>
+    </div>
+</div>
+<div class="section2">
+    <div class="sec-left2">
+        <h2>Sign In Now</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis suscipit, laborum illum unde ullam ut amet nemo quis eaque perspiciatis quisquam necessitatibus officiis perferendis doloribus quaerat corrupti, eius non culpa velit blanditiis! Tempore laboriosam assumenda at quaerat unde ut dolores ab impedit ratione. Voluptates dolorum earum ducimus tempore? Magnam, eum?</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis eligendi blanditiis adipisci fugiat dolores rem, incidunt quasi. Cumque ab sed dignissimos aliquid iure. Omnis maxime ratione quam iste ut rem cum non aliquid numquam. Voluptate molestiae consectetur labore dignissimos saepe. Libero explicabo ipsam unde sequi mollitia fugiat labore corrupti sint!</p>
+    </div>
+    <div class="sec-right2">
+        <h2>Give Information About You</h2>
+        <form>
+            <Input type="text" name="username" placeholder="Enter your Username">
+            <Input type="email" name="email" placeholder="Enter your Email">
+            <Input type="password" name="Password" placeholder="Enter your Password">
+            <Input type="number" name="Age" placeholder="Enter your Age">
+            <button>Submit</button>
+        </form>
+    </div>
+</div>
+        
+
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+    showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+    showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    if (n > slides.length) {slideIndex = 1}    
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+    }
+  
+    slides[slideIndex-1].style.display = "block";  
+    
+    }
+</script>
+
+</body>
+</html>

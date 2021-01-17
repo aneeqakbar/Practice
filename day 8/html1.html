@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>making a function which takes 2 values and tells which is greater and which is smaller</title>
+</head>
+<body>
+    <input type="number" id="firstvalue" value="0">
+    <input type="number" id="secondvalue" value="0">
+    <p id="demo">Answer goes here</p>
+    <button onclick="fun1(), fun2()">Test NOW!</button>
+
+    <script>
+
+    function fun1() {
+        let x = document.getElementById("firstvalue").value;
+        let y = document.getElementById("secondvalue").value;
+        let a = parseInt(x);
+        let b = parseInt(y);
+        if (a > b) {
+            document.getElementById('demo').innerHTML = a + " is greater than " + b;
+        }
+        else if(a < b){
+            document.getElementById('demo').innerHTML = a + " is smaller than " + b;
+        }
+        else{
+            document.getElementById('demo').innerHTML = a + " is equal to " + b;
+
+        }
+        alert(a + b);
+    }
+    
+    </script>
+   
+    
+</body>
+
+</html>

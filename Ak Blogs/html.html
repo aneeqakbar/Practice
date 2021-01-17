@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ak Blogs</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css" />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar" class="width-90 flex">
+        <div id="nav-brand">
+          <h1>AkBlogs!</h1>
+        </div>
+        <div id="nav-links" class="flex">
+          <ul class="flex">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+        </div>
+        <form id="nav-form" action="">
+          <input
+            type="search"
+            name="query"
+            id="nav-search"
+            placeholder="Search Website"
+          />
+        </form>
+      </nav>
+      <div id="slides" class="width-90 flex">
+        <img
+          src="img/slide (1).jpg"
+          alt="slide-img"
+          class="slides-img width-90"
+        />
+        <img
+          src="img/slide (1).png"
+          alt="slide-img"
+          class="slides-img width-90"
+        />
+        <img
+          src="img/slide (1).jpg"
+          alt="slide-img"
+          class="slides-img width-90"
+        />
+        <img
+          src="img/slide (2).png"
+          alt="slide-img"
+          class="slides-img width-90"
+        />
+
+        <button id="next" onclick="switchslide(this)">Next</button>
+        <button id="prev" onclick="switchslide(this)">Prev</button>
+      </div>
+    </header>
+    <main class="width-90 flex" id="main">
+      <div id="posts">
+        <h1>Fetured Posts</h1>
+        <div class="post">
+          <div class="post-img"><img src="img/profuct.png" alt="" /></div>
+          <div class="post-content">
+            <h2>My first Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-img"><img src="img/product2.png" alt="" /></div>
+          <div class="post-content">
+            <h2>My second Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-img"><img src="img/product (3).png" alt="" /></div>
+          <div class="post-content">
+            <h2>My thrid Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+        <div class="post">
+          <div class="post-img"><img src="img/product (4).png" alt="" /></div>
+          <div class="post-content">
+            <h2>My forth Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+      </div>
+      <div id="sort">
+        <table>
+          <tr>
+            <thead>
+              <th>Year</th>
+              <th>catogeries</th>
+            </thead>
+            <tbody>
+              <td>2020</td>
+              <td>2019</td>
+            </tbody>
+          </tr>
+          <tr>
+            <tbody>
+              <td>Games</td>
+              <td>World</td>
+            </tbody>
+          </tr>
+        </table>
+      </div>
+    </main>
+
+    <section id="recent-articles">
+      <h1>Recent Articles</h1>
+      
+      <input onclick="recentslider(this)" type="button" id="recent-next" value="Next">
+      <input onclick="recentslider(this)" type="button" id="recent-prev" value="Prev">
+      
+
+      <div id="recent-cont">
+        <div class="recent-post">
+          <div class="post-img"><img src="img/product (4).png" alt="" /></div>
+          <div class="post-content">
+            <h2>My forth Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+        <div class="recent-post">
+          <div class="post-img"><img src="img/profuct.png" alt="" /></div>
+          <div class="post-content">
+            <h2>My forth Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+        <div class="recent-post">
+          <div class="post-img"><img src="img/product2.png" alt="" /></div>
+          <div class="post-content">
+            <h2>My forth Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+        <div class="recent-post">
+          <div class="post-img"><img src="img/product (3).png" alt="" /></div>
+          <div class="post-content">
+            <h2>My forth Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+        <div class="recent-post">
+          <div class="post-img"><img src="img/product (4).png" alt="" /></div>
+          <div class="post-content">
+            <h2>My forth Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+        <div class="recent-post">
+          <div class="post-img"><img src="img/profuct.png" alt="" /></div>
+          <div class="post-content">
+            <h2>My forth Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+        <div class="recent-post">
+          <div class="post-img"><img src="img/product2.png" alt="" /></div>
+          <div class="post-content">
+            <h2>My forth Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+        <div class="recent-post">
+          <div class="post-img"><img src="img/product (3).png" alt="" /></div>
+          <div class="post-content">
+            <h2>My forth Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+        <div class="recent-post">
+          <div class="post-img"><img src="img/product (4).png" alt="" /></div>
+          <div class="post-content">
+            <h2>My forth Post</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit...</p>
+            <p>By Aneeq Akbar || 11/27/2020</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer id="foot">
+      <p>@Akblogs</p>
+      <p>Copyright &copy; aneeqakbqrbuss@gmail.com</p>
+      <p>11/29/2020</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

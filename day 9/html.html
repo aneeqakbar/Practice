@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age checker app</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<section id="main">
+    <header>
+        <!-- NAVBAR -->
+        <nav>
+            <!-- NAVBAR BRAND -->
+            <img src="logo.png" width="50px" height="50px">
+            <!-- NAV MENU -->
+            <ul class="links-ul">
+
+                <li><a class="links" href="#">Home</a></li>
+                <li><a class="links" href="#">Trends</a></li>
+                <li class="dropbtn"><a class="links" href="#">Explore<i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown">
+                        <ul class="dropmenu">
+                            <h3>Explore The Site</h3>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+
+                            <h3>Explore The Site</h3>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="links" href="#">Team</a></li>
+                <li><a class="links" href="#">About Us</a></li>
+            </ul>
+            <!-- NAV FORM -->
+            <form>
+                <i class="fa fa-search"></i>
+                <input type="search" name="Search" id="nav-search">
+                <input type="button" value="Sign In" id="sin">
+                <input type="button" value="Sign Up" id="sup">
+            </form>
+        </nav>
+    </header>
+
+    <!-- Section (1) -->
+
+    <div class="section1">
+        <div class="sec1-left">
+            <h1>Built for developers</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span>Esse porro</span> labore expedita eveniet
+                voluptate mollitia adipisci. Quos quae distinctio voluptate molestias sed esse consequatur
+                <span>aspernatur</span> culpa quas illo, officiis, consectetur, accusamus itaque quis sunt deleniti.</p>
+        </div>
+        <div class="sec1-right">
+            <form id="form">
+                <label for="Username">Username</label>
+                <input type="text" name="Username" id="Username">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" id="Email">
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="Password" minlength="8">
+
+                <p>Make sure email contain an "@" sign and password contains at least 8 characters including a number
+                    and a lowercase letter.</p>
+
+                <input type="button" value="Sign Up">
+
+                <p>By clicking “Sign up”, you agree to our Terms of Service and Privacy Statement. This is my first
+                    responsive website so go easy on me!</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="verification">
+    <button onclick="trigger()" id="trigger">Access Page</button>
+    <h1 id="demo"></h1>
+</div>
+
+    <script>
+        function trigger() {
+            var age = prompt("What's your Age?", "0");
+
+            if (age > 80) {
+                document.getElementById('demo').innerHTML = "Aren't You Dead Till Now?";
+                document.getElementById("main").style.display = "none";
+            }
+            else if (age < 1) {
+                document.getElementById('demo').innerHTML = "Please enter valid age!";
+                document.getElementById("main").style.display = "none";
+            }
+            else if (age < 18) {
+                document.getElementById('demo').innerHTML = "Sorry, You cant access our site.";
+                document.getElementById("main").style.display = "none";
+            }
+            else if (age >= 18) {
+                document.getElementById("main").style.display = "block";
+                document.getElementById("demo").style.display = "none";
+                document.getElementById("trigger").style.display = "none";
+            }
+            else {
+                document.getElementById('demo').innerHTML = "Please enter valid age!";
+                document.getElementById("main").style.display = "none";
+            }
+
+        }
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+        }
+        array.forEach(element => {
+            
+        });
+
+        for (const key in object) {
+            if (object.hasOwnProperty(key)) {
+                const element = object[key];
+                
+            }
+        }
+
+        for (const iterator of object) {
+            
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form submission collector and recall css</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="responsive.css">
+</head>
+
+<body>
+    <!-- NAVABAR -->
+    <nav>
+       
+        <ul>
+            <li><a class="navbtn active">HOME</a></li>
+            <li><a class="navbtn" href="#pp">POPULAR ITEMS</a></li>
+            <li><a class="navbtn" href="#hd">HOME DECORS</a></li>
+            <li><a class="navbtn">ABOUT</a></li>
+            <li><a id="contbtn" class="navbtn">CONTACT US</a></li>
+            <li><a><i class="fa fa-phone" style="font-size:25px;"></i> +92 123987456</a></i></li>
+            <div id="themebtn">
+                <div id="dot"></div>
+            </div>
+        </ul>
+        <div class="nav-brand">
+            <img src="img/aneeq.png" alt="LOGO">
+        </div>
+    </nav>
+
+    <!-- CONTACT US -->
+    <div id="contmain">
+        <div id="contbody">
+            <div id="contact">
+                <img src="img/avatar.png" alt="Avatar">
+                <form action="#">
+                    <label for="username">Username:
+                        <input type="text" required placeholder="Username" name="username">
+                    </label>
+                    <label for="email">Email:
+                        <input type="email" required placeholder="Email">
+                    </label>
+                <div class="contbtnbody">
+                    <input id="contin" type="submit" value="Sign In">
+                    <input id="contup" type="button" value="Sign Up">
+                </div>
+                </form>
+                <button id="contcancel">&#10005;</button>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER -->
+    <header>
+        <div class="headertext">
+            <h1>A programmer always loves his code,Keep coding</h1>
+            <p>We have always said actually this isn't about money, it's not about price. This can be an experience. It
+                doesn't have to be about buying something.</p>
+        </div>
+        <div class="headerbtn">
+            <button id="hbtn1">Get Product</button>
+            <button id="hbtn2">Contact Now</button>
+        </div>
+        <div class="slideshow">
+            <div class="slides fade"><img src="img/header.jpg" width="100%"></div>
+            <div class="slides fade"><img src="img/header1.jpg" width="100%"></div>
+            <div class="slides fade"><img src="img/header2.jpg" width="100%"></div>
+            <div class="slides fade"><img src="img/header3.jpg" width="100%"></div>
+        </div>
+        <!-- <button onclick="plusSlides()">hello</button> -->
+    </header>
+    <!-- SIDENAV -->
+    <div id="sidenav">
+        <ul>
+            <h1>Categories</h1>
+            <li><a href="#">Men's Clothing</a></li>
+            <li><a href="#">Women's Clothing</a></li>
+            <li><a href="#">Jewelry</a></li>
+            <li><a href="#">Computer Accessories</a></li>
+            <li><a href="#">Supplies</a></li>
+        </ul>
+    </div>
+    <div id="btnside">&#187;</div>
+    <!-- BODY -->
+    <section class="container1" id="pp">
+        <h2>Popular Products</h2>
+        <p>Buying something on sale is a very special feeling. In fact, the less I pay for something, the more it is
+            worth to me.</p>
+        <div class="cards">
+            <div class="main-card">
+                <img src="img/profuct.png" alt="">
+                <h3>Black Friday Sale!</h3>
+                <p>
+                    The sale just got bigger! Now get 50 crore worth of discounts on your favorite brands! Avail
+                    Discounts Worth 15 Crore on 15 Million Products</p>
+            </div>
+            <div class="main-card">
+                <img src="img/product2.png" alt="">
+                <h3>Desktop CPUs</h3>
+                <p>Get multicore AMD desktop processors with outstanding performance, incredible gaming and amazing
+                    value.</p>
+            </div>
+            <div class="main-card">
+                <img src="img/product (3).png" alt="">
+                <h3>Gaming Setup</h3>
+                <p>Find the best Gaming Setup price! Gaming Setup for sale in Pakistan. We offers online local
+                    classified ads for Computers & Accessories.</p>
+            </div>
+            <div class="main-card">
+                <img src="img/product (4).png" alt="">
+                <h3>Mordern Furniture</h3>
+                <p>Modern furniture with of-the-moment design sense at an affordable price. Find contemporary sofas,
+                    beds, dining furniture and more.</p>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION 2 -->
+    <section class="container1" id="hd">
+        <h2>Home Decorations</h2>
+        <p>A house is made of walls and beams, a home is built with love and dreams</p>
+        <div class="cards">
+            <div class="main-card">
+                <img src="img/furniture (1).jpg" alt="">
+                <h3>Latest Led Televisions</h3>
+                <p>
+                    Buy 2020 latest LED televisions on lowest prices in Pakistan.4k TVs at very resonable prices.</p>
+            </div>
+            <div class="main-card">
+                <img src="img/furniture (2).jpg" alt="">
+                <h3>Sofas and Couches</h3>
+                <p>These comfortable sofas & couches will complete your living room decor. Choose from various styles,
+                    colors & shapes.</p>
+            </div>
+            <div class="main-card">
+                <img src="img/furniture (3).jpg" alt="">
+                <h3>Home Decor</h3>
+                <p>We make it easier for our customers to shop best decorating products, household essentials and wall
+                    clocks and many more!</p>
+            </div>
+            <div class="main-card">
+                <img src="img/furniture (4).jpg" alt="">
+                <h3>Glass Sheet</h3>
+                <p>Incorporating artistic glass is another way to make a front door stand out.Quality Sheets of glass at
+                    great price.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>Practicing</p>
+        <p>Copyright &copy; Anique/AK </p>
+        <p id="fdate">asdas</p>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>

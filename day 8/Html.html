@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Js practice</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .p1{
+            background-color: red;
+            padding: 10px;
+            border-radius: 20px;
+            text-align: center;
+            font-size: 20px;
+        }
+        .p2{
+            background-color: rgb(0, 47, 255);
+            padding: 10px;
+            font-size: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Practicing Js</h1>
+
+    <p class="p1" id="p1">Hello world</p>
+
+    <p class="p" id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reprehenderit corrupti quam asperiores. Modi ducimus vel, soluta recusandae laboriosam nihil.</p>
+
+    <p id="p3">HAHAHAHAHAHAHAH</p>
+
+    <button onclick="btnfun(), alert()" id="btn">Hello there!</button>
+
+    <script>
+        
+        let name = "Aneeq";
+
+        var firstName = "John", lastName = "Doe", age = 35 ;
+
+        function btnfun(){
+            document.getElementById("p3").innerHTML = `${name}`;
+            document.getElementById("p1").innerHTML = "Hello i am changed!";
+            document.getElementById("p1").className = "p2";
+            document.getElementById("btn").setAttribute("onclick", "btnrevert()") ;
+        }
+
+        function btnrevert(){
+            document.getElementById("p3").innerHTML = "Changed again!";
+            document.getElementById("p1").innerHTML = "Hello i am changed again!";
+            document.getElementById("p1").className = "p1";
+            document.getElementById("btn").setAttribute("onclick", "btnfun()");
+        }
+        function alert(){
+            alert("Dont me Mad!");
+        }
+        
+    </script>
+</body>
+
+</html>

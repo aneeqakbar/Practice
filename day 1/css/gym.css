@@ -1,0 +1,363 @@
+        /* CSS Reset */
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
+    /* background: url('pexels-cottonbro-4761779.jpg');
+    background-size: 100%; */
+}
+.ahov:hover{
+    background-color: rgb(0, 88, 88);
+}
+.header{
+    background-color: #f8f9fa;
+    padding: 40px 110px;
+    box-shadow: 0px 8px 15px black;
+}
+        /* HEADER LEFT */
+    .logo{
+        float:left;
+        display: block;
+        position: relative;
+        top:-20px;
+    }
+        .logo img{
+            display: inline;
+            width:80px;
+            height:60px;
+        }
+        .logo a{
+            text-decoration: none;
+            color: rgb(59, 59, 59);
+        }
+        .logo h2{
+            display:inline-block;
+            position: relative;
+            top: -15px;
+            font-size: 2rem;
+            font-weight: 400;
+        }
+        /* HEADER MIDDLE */
+    .details{
+        display: inline-block;
+        margin:auto;
+        
+    }
+        .dtls-list{
+            display: inherit;
+            margin: 0;
+            position: relative;
+            right:-70px;
+        }
+        .dtls-list li{
+            margin: 10px 5px;
+            display: inline;
+            font-size: smaller;
+            font-weight: 500;
+            letter-spacing: -1px;
+        } 
+        /* HEADER RIGHT */
+    .header-btn{
+        float:right;
+    }
+        .header-btn a{
+            color:white;
+            text-decoration: none;
+            padding:18px 25px;
+            background-color: teal;
+            font-weight: 700;
+        }
+
+    .navbar ul{
+        list-style: none;
+        float: left;
+        margin: 0;
+        padding: 0;
+        top:50px;
+        left:100px;
+        z-index: 1;
+        position: absolute;
+    }
+
+    .navbar ul li{
+        display: inline-block;
+        margin: 0px 25px;
+    }
+
+    .navbar ul li a{
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        padding-bottom: 5px;
+
+    }
+
+    .navbar ul li a:hover, .navbar ul li a:focus{
+        border-bottom: 2px solid white;
+    }
+    .fa {
+        color: white;
+        position: relative;
+        top:50px;
+        right:80px;
+        float:right;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        z-index: 1;
+      }
+
+.hov-text{
+    /* border:5px solid red; */
+    position: absolute;
+    top:34%;
+    left:10%;
+    z-index: 1;
+    width: 60%;
+    
+}
+    .hov-text p{
+        color: white;
+        font-size: 2.5rem;
+        padding-right: 0;
+        margin:30px 0px;
+    }
+    .hov-text span{
+        display: block;
+        font-size: 1rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    .hov-text a{
+        color:white;
+        text-decoration: none;
+        padding:10px 15px;
+        background-color: teal;
+        font-weight: 400;
+    }
+
+
+.mySlides {
+    display: none;
+}
+    .mySlides img{
+        filter: brightness(70%);
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+    max-width: 100%;
+    position: relative;
+    margin: auto;
+    height: 478.14px;
+    top:-34px;
+    }
+
+    /* Next & previous buttons */
+    .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 55%;
+    width: auto;
+    padding: 10px 15px;
+    padding-bottom: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: color, background-color 0.2s ease;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255, 0.3);
+    user-select: none;
+    }
+
+    /* Position the "next button" to the right */
+    .next {
+    right: 35px;
+    }
+    .prev{
+        left: 35px;
+    }
+
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+    background-color: rgba(255, 255, 255);
+    color:black;
+    }
+
+    /* Caption text */
+    .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 0px 12px;
+    position: absolute;
+    bottom: -26px;
+    width: 100%;
+    text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+    color: white;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    right:5px;
+    top: 40px;
+    border-radius: 60px;
+    background-color: rgb(24, 24, 24);
+    font-weight: 600;
+    z-index: 1;
+    }
+
+    /* Fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade {
+    from {opacity: .5} 
+    to {opacity: 1}
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+    }
+
+.section1{
+    width: 100%;
+    height: 900px;
+    position: relative;
+    top:-4px;
+    background-color: #f8f9fa;
+}
+    .img-cont{
+        width: 40%;
+        height: 55%;
+        position: absolute;
+        top:80px;
+        left:80px;
+    }
+    #img1, #img2, #img3{
+        margin:10px;
+        height:69%;
+    }
+    #img1{
+        width:46.5%;
+        float: left;
+        height:143%;
+    }
+    #img2{
+        width: 46%;
+    }
+    #img3{
+        width: 46%;
+    }
+
+    .sec-left1{
+        float:right;
+        width:50%;
+        padding:20px;
+        margin-top:110px;
+        margin-bottom:110px;
+        margin-right:-40px;
+    }
+    .sec-left1 h2{
+        font-size: 2rem;
+    }
+    .sec-left1 p:nth-of-type(1){
+        font-size: 18px;
+        color: teal;
+    }
+    .sec-left1 p{
+        padding-right:20%;
+        font-size: 23px;
+        font-family: cursive;
+        font-weight: 100;
+    } 
+    .sec-left1 img{
+        margin: 0;
+        padding: 0;
+    }
+
+.section2{
+    width:100%;
+    position: relative;
+    top:-24px;
+    height: 500px;
+    /* border:2px solid red; */
+}
+
+    .sec-left2{
+        float:left;
+        display: inline-block;
+        width: 55%;
+        height:500px;
+        position: relative;
+        top:-12px;
+        padding: 50px;
+        font-size: 17px;
+        background-color:rgb(0, 165, 165);
+    }
+    .sec-left2 h2{
+        color: white;
+        font-size: 40px;
+        display: inline;
+        padding-bottom: 5px;
+        
+        border-bottom: 2px solid white;
+    }
+    .sec-left2 p{
+        padding: 20px 0px;
+        font-size: 20px;
+    }
+
+    .sec-right2{
+        display: inline-block;
+        float:right;
+        /* border:2px solid red; */
+        width: 45%;
+        height:500px;
+        position: relative;
+        top:-12px;
+        padding: 50px;
+        background-color: #f8f9fa;
+    }
+    .sec-right2 input{
+        padding: 10px 20px;
+        width:100%;
+        border-radius: 50px;
+        border:none;
+        background-color: rgb(43, 43, 43);
+        color: white;
+        font-size: 17px;
+        display: block;
+        margin-bottom: 30px;
+    }
+    .sec-right2 input:focus{
+        outline: none;
+        border:2px solid teal;
+    }
+    .sec-right2 input::placeholder{
+        color:white;
+    }
+    .sec-right2 h2{
+        margin-bottom:50px;
+        font-size: 30px;
+    }
+    .sec-right2 button{
+        padding:10px 20px;
+        background-color:teal;
+        border: none;
+        color:white;
+        font-family: 'Open Sans', sans-serif;
+        font-size:15px;
+        margin-left:10px;
+    }

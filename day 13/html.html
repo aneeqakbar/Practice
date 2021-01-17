@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" id="input" placeholder="type">
+    <p>In this example, the break statement refers to the for loop labeled "Loop1". When j is equal to 2, the break
+        statement "jumps out" of Loop1.</p>
+
+    <button onclick="validation()">Try it</button>
+
+    <p id="demo"></p>
+
+    <script>
+        // function myFunction() {
+        //     var text = "";
+        //     var i;
+
+        //     Loop1:
+        //     for (i = 0; i < 10; i++) {
+        //     //text += "<br>" + "i = " + i + ", j = ";
+            
+        //     Loop2:       // The second for loop is labeled "Loop2"
+        //     for (j = 0; j < 15; j++){
+        //         // if (j === 10) {
+        //             //     break Loop1;
+        //             //     }
+                
+                
+        //         document.getElementById("demo").innerHTML = text += "<br>" + i + "_" + j;
+        //     }
+        // }
+        // }
+        function validation() {
+        let x = document.getElementById('input').value;
+        try {
+            if (x=="") {
+                throw("its empty");
+            }
+        } catch (error) {
+            console.log(error);
+        }
+            
+        }
+    </script>
+</body>
+
+</html>

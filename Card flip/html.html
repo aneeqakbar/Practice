@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card flipe || Memory Game</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="main">
+      <h1 class="difficulty">Select Difficulty</h1>
+      <p id="moves"></p>
+      <div id="card-cont">
+        <div class="difficulties" onclick="cardgen(12,'easy')" id="Easy">Easy</div>
+        <div class="difficulties" onclick="cardgen(18,'medium')" id="Medium">Medium</div>
+        <div class="difficulties" onclick="cardgen(26,'hard')" id="Hard">Hard</div>
+        <div id="gameend">
+          <p id="gameendtext">Game Completed</p>
+          <p id="minmoves"></p>
+          <p id="curmoves"></p>
+        </div>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>

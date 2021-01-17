@@ -1,0 +1,47 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    height: 4000px;
+    border: 2px solid red;
+    background-color: darkkhaki;
+}
+.box{
+    display:inline-block;
+    height:150px;
+    width:150px;
+    margin: 5px;
+    background-color: darkgreen;
+    border:2px solid black;
+    text-align: center;
+    padding: 45px;
+    font-size: 2rem;
+    color:white;
+}
+
+#box1{
+    /* changes position relative to its orignal position */
+    position:relative; 
+    top:100px;
+}
+#box2{
+    /* changes position relative to its first parent position */
+    position:absolute;
+    margin:15px;
+    top:0;
+    right: 0;
+}
+#box3{
+    /* changes position relative to the browser window and keeps it on the top even on scrolling */
+    position:fixed;
+    top:50px;
+}
+#box4{
+    position:static;
+    
+}
+#box5{
+    /* Sticks the element to the browser window until its max height reaches */
+    position: sticky;
+    top:0;
+}

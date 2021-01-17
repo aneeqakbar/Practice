@@ -1,0 +1,237 @@
+:root{
+    --primary-color: rgb(255, 213, 220);
+    --secondary-color: rgb(198, 239, 255);
+}
+
+*{
+    box-sizing: border-box;
+    font-family: 'Grandstander', cursive;
+    margin: 0;
+    padding: 0;
+}
+/* BACKGROUND IMAGE */
+header::before{
+    content: "";
+    position: absolute;
+    top:0; left:0;
+    width:100%; height:300vh;
+    background: url('background.jpg') no-repeat;
+    background-size: 100% 100%;
+    z-index:-1;
+    filter: brightness(.5);
+}
+/* NAVBAR */
+nav{
+    display: flex;
+    /* position:fixed; */
+    height: 4rem;
+    /* border:1px solid black; */
+    box-shadow: 0px 0px 5px black;
+}
+/* NAVBAR BRAND */
+    nav img{
+        align-self: center;
+        margin:0px 2rem;
+    }
+    /* NAVBAR MENU */
+    nav .links-ul{
+        display: flex;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+
+        nav .links-ul li{
+            list-style: none;
+        }
+            nav .links-ul li .links{
+                text-decoration: none;
+                font-weight: 200;
+                font-size: 1rem;
+                padding:1.3rem 20px;
+                color: var(--primary-color);
+            }
+            nav ul li .links:hover{
+                background-color: var(--secondary-color);
+                text-shadow: 1px 1px black;
+            }
+            .fa{
+                margin-left:5px;
+            }
+/* NAVBAR FORM */
+    nav form{
+        align-self: center;
+        margin-left: 15rem;
+    }
+        form input[type="search"]{
+            padding: .3rem 1.8rem;
+            border-radius: 10px;
+            border:none;
+            font-family: Arial, Helvetica, sans-serif;
+            border:2px solid transparent;
+        }
+            form input[type="search"]:focus{
+                outline: none;
+                border: 2px solid var(--primary-color);
+            }
+
+        form input[type="button"]{
+            padding:.2rem .4rem;
+            border-radius: .5rem;
+            margin:0px 5px;
+            font-weight: 400;
+            font-size: 1rem;
+        }/* FORM STYLING */
+        form input[type="button"]:focus{
+            outline: none;
+        }
+        form i{
+            position: relative;
+            top:1px; left:1.7rem;
+        }
+        #sin:hover{
+            color:rgb(255, 181, 193);
+        }
+        #sin:active{
+            border:1px solid rgb(255, 181, 193);
+        }
+        #sup:hover{
+            color:rgb(255, 181, 193);
+            border:1px solid rgb(255, 181, 193) ;
+        }
+        #sup:active{
+            background-color: pink;
+            color: white;
+        }
+            #sin{
+                background-color: transparent;
+                border:1px solid transparent;
+                color:var(--primary-color);
+            }  
+            #sup{
+                background-color: transparent;
+                border: 1px solid var(--primary-color);
+                color:var(--primary-color);
+            }
+    /* DROPDOWN MENU */
+    
+    .dropmenu{
+        display:block;
+        height: 0;
+        overflow:hidden;
+        position: absolute;
+        top:4.1rem;
+        left:16.5rem;
+        transition: opacity, padding, width, left .5s;
+        width:13rem;
+        border-radius: 1rem;
+        background-color: rgb(255, 230, 234);
+    }
+
+    .dropmenu h3{
+        border-bottom:1px solid rgb(184, 184, 184) ;
+        padding-bottom: 10px;
+        font-weight: 200;
+        margin-top: 10px;
+    }
+        .drop-items{
+            color: rgb(37, 37, 37);
+            display: block;
+            text-decoration: none;
+            text-align: left;
+            font-family: Arial, Helvetica, sans-serif;
+            padding:10px;
+        }
+        .drop-items:hover{
+            background-color: rgb(253, 209, 215);
+        }
+        /* TRIGGER DROPDOWN */
+        .dropbtn:hover .dropmenu {
+            opacity: 1;
+            height: auto;
+            width:20rem;
+            left:17.5rem;
+            padding:1.5rem 1.5rem;
+            border: .3rem solid var(--secondary-color);
+        }
+
+.section1{
+    display: flex;
+    width:100%;
+    height: 100vh;
+}
+    .sec1-left{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+        .sec1-left h1{
+            font-size: 4rem;
+            margin-left: 10rem; margin-right: 3rem; margin-bottom: 1rem;
+            color:white;
+
+        }
+        .sec1-left p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1.3rem;
+            margin-left: 10rem; margin-right: 3rem;
+            color:rgb(196, 196, 196);
+        }
+        .sec1-left p span{
+            color:white;
+            border-bottom: 1px solid rgb(196, 196, 196);
+        }
+    .sec1-right{
+        width: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+        #form{
+            display: flex;
+            padding: 25px;
+            margin-right: 100px;
+
+            width: 65%; height:90%;
+            flex-direction: column;
+            background-color: var(--secondary-color);
+            border-radius: 8px;
+            justify-content: space-around;
+        }  
+
+            #form input{
+                border-radius: 5px;
+                border:1px solid rgb(148, 148, 148);
+                padding:14px;
+            }
+            #form label{
+                margin-left: .3rem;
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 600;
+            }
+            #form input[type="button"]{
+                padding: 25px 15px;
+                background-color: hotpink;
+            }
+            #form p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: .8rem;
+            }
+            #form input:focus{
+                border:1px solid rgb(12, 126, 255);
+                box-shadow: 0px 0px 2px 3px rgb(155, 201, 255);
+                background-color: rgb(243, 243, 243);
+                outline: none;
+            }
+            #form input[type="button"]:hover{
+                background-color: var(--primary-color);
+            }
+            #form input[type="button"]:focus{
+                box-shadow: none;
+                background-color: var(--primary-color);
+ 
+            }
+
+
+

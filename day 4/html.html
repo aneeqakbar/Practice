@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Grandstander:wght@100;200;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header>
+                        <!-- NAVBAR -->
+        <nav>
+                        <!-- NAVBAR BRAND -->
+            <img src="logo.png" width="50px" height="50px">
+                        <!-- NAV MENU -->
+            <ul class="links-ul">
+                
+                <li><a class="links" href="#">Home</a></li>
+                <li><a class="links" href="#">Trends</a></li>
+                <li class="dropbtn"><a class="links" href="#">Explore<i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown">
+                        <ul class="dropmenu">
+                            <h3>Explore The Site</h3>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+
+                            <h3>Explore The Site</h3>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                            <li><a class="drop-items" href="#">LINK</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><a class="links" href="#">Team</a></li>
+                <li><a class="links" href="#">About Us</a></li>
+            </ul>
+                        <!-- NAV FORM -->
+            <form>
+                <i class="fa fa-search"></i>
+                <input type="search" name="Search" id="nav-search">
+                <input type="button" value="Sign In" id="sin">
+                <input type="button" value="Sign Up" id="sup">
+            </form>
+        </nav>
+    </header>
+
+                    <!-- Section (1) -->
+
+    <div class="section1">
+        <div class="sec1-left">
+            <h1>Built for developers</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <span>Esse porro</span> labore expedita eveniet voluptate mollitia adipisci. Quos quae distinctio voluptate molestias sed esse consequatur <span>aspernatur</span> culpa quas illo, officiis, consectetur, accusamus itaque quis sunt deleniti.</p>
+        </div>
+        <div class="sec1-right"> 
+            <form id="form">
+                <label for="Username">Username</label>
+                <input type="text" name="Username" id="Username">
+                <label for="Email">Email</label>
+                <input type="email" name="Email" id="Email">
+                <label for="Password">Password</label>
+                <input type="password" name="Password" id="Password" minlength="8">
+                
+                <p>Make sure email contain an "@" sign and password contains at least 8 characters including a number and a lowercase letter.</p>
+
+                <input type="button" value="Sign Up">
+
+                <p>By clicking “Sign up”, you agree to our Terms of Service and Privacy Statement. This is my first responsive website so go easy on me!</p>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+}
+div{
+    position: relative;
+}
+.btn{
+    background-color: #ff7171;
+    padding:0px;
+    margin:5px;
+    font-size: medium;
+    cursor: pointer;
+    box-shadow: 0px 0px 1px black;
+    color:black;
+    font-family: 'Courier New', Courier, monospace;
+}
+    .btn:hover{
+        background-color: #fb4141;
+        position: relative;
+        top: -2px;
+        left: -2px;
+        box-shadow: 2px 2px 1px  gray;
+    }
+        #btna{
+            text-decoration: none;
+            padding: 5px;
+        }
+        #btna:visited{
+            color:black;
+        }
+
+        #btna:active{
+            outline: none;
+            top:1px;
+            left:0px;
+            box-shadow: none;
+            background-color: blue;
+        }
+        #btnid{
+            padding: 5px;
+            border:none;
+            outline: none;
+        }
+        #btnid:active{
+            outline: none;
+            background-color: blue;
+            top:1px;
+            left:0px;
+            box-shadow: none;
+        }
