@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listner</title>
+</head>
+<style>
+    *{
+        box-sizing: border-box;
+    }
+    #btn{
+        padding: 10px 20px;
+        background-color: rgb(0, 107, 107);
+        cursor: pointer;
+        border: 2px solid transparent;
+    }
+        #btn:focus{
+            outline: none;
+            border: 2px solid black;
+        }
+        
+        #btn:active{
+            background-color: rgb(0, 187, 187);
+            border: 2px solid black;
+        }
+        #para{
+            overflow: hidden;
+            background-color: aqua;
+            /* padding: 20px; */
+            transition: height .2s;
+        }
+</style>
+<body>
+    <h1>Aneeq Akbar Khan</h1>
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat magnam adipisci incidunt temporibus itaque animi officiis ipsa quibusdam repudiandae eligendi! Nobis rerum qui a doloremque laboriosam amet? Doloribus delectus saepe vitae officiis mollitia cum vero dignissimos, amet consectetur aliquam ad similique hic eos repellat odit id ipsam nobis qui sed excepturi corporis. Explicabo voluptatum sequi eveniet totam alias corporis, optio id quia atque ab consequuntur quidem. Provident in vel quidem est laudantium nulla deleniti amet magnam, soluta esse ullam ea illo eligendi iure quam facere commodi consectetur! Voluptate qui magni dolorem incidunt accusamus quod expedita quos a atque cumque. Soluta voluptatem facilis quaerat fugiat nemo rem ea veniam quas vitae architecto, omnis dolorem qui optio magnam blanditiis modi cum sunt dignissimos commodi necessitatibus laudantium. Delectus unde repellendus officiis saepe similique atque a voluptates ducimus provident repudiandae culpa sint, itaque doloribus exercitationem odit fugiat dolores, quam illo quo voluptatum rerum eaque beatae. Nam est deserunt officia magnam quasi cupiditate eius at voluptatem aspernatur, debitis distinctio magni, vitae quae voluptas amet quidem ducimus ut tenetur! Dicta, aut impedit iste quasi similique commodi ipsam quibusdam! Inventore voluptate nam velit dicta id aliquam aspernatur doloremque doloribus dolorem sunt soluta ratione itaque unde nulla provident architecto hic, deserunt ipsum amet quasi? Impedit aperiam distinctio modi quis ratione, totam reiciendis. Amet et cumque quo a, enim vitae deserunt ipsum veniam obcaecati ut fugiat beatae voluptates totam quasi, reiciendis nam quam nobis odit labore sapiente molestias iure cum eligendi. Earum molestias libero, aperiam natus architecto eveniet est doloremque cumque! Velit, animi incidunt?
+    </p>
+
+    <button id="btn">Hide</button>
+
+    <script>
+        let para = document.getElementById('para');
+        let btn = document.getElementById('btn');
+
+        // btn.addEventListener('click', function Toggledisplay() {
+        //     if (para.style.height != "180px") {
+        //         para.style.height = "180px";
+        //         document.getElementById('btn').innerHTML = "Hide";
+        //     }
+        //     else{
+        //         para.style.height = "0px";
+        //         document.getElementById('btn').innerHTML = "Show";
+        //     }
+        // });
+
+        btn.addEventListener('click', Toggledisplay);
+
+        function Toggledisplay() {
+            if (para.style.height != "180px") {
+                para.style.height = "180px";
+                document.getElementById('btn').innerHTML = "Hide";
+            }
+            else{
+                para.style.height = "0px";
+                document.getElementById('btn').innerHTML = "Show";
+            }
+        }
+    </script>
+</body>
+
+</html>

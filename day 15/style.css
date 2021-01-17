@@ -1,0 +1,177 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    background-color: #322d24;
+}
+body{
+    height: 100vh;
+    display: flex; justify-content: center; align-items:center ;
+}
+#canvascont{
+    position: relative;
+}
+#snakegame{
+    position: relative; top: 20px;
+    transform: scale(.95);
+}
+
+#End{
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .7);
+    z-index: 1;
+
+    display: none; justify-content: space-around; align-items: center;
+    flex-direction: column;
+}
+    #End h1{
+        font-size: 75px;
+        margin-top: 5rem;
+        background-color: transparent;
+        color: rgb(228, 0, 0);
+        text-shadow: 1px 1px black,
+        2px 2px black,
+        3px 3px black,
+        4px 4px black,
+        5px 5px black,
+        6px 6px black,
+        7px 7px black;
+
+        transform: scale(0);
+        animation: fadepause .5s forwards;
+    }
+
+    .flex{
+        display: flex; justify-content: space-evenly; align-items: center;
+        background: transparent; margin-top: 20px;
+        width: 100%;
+    }
+    #End h2{
+        padding: 20px;
+        background-color: #594d37;
+        color:white;
+        border-radius: 20px;
+        border: 1.5px solid white;
+    }
+    #End button{
+        padding: 15px 20px;
+        font-size: 20px; font-weight: 1000; font-family: cursive;
+        border: none; outline: none;
+        background-color: #ccbc9f; border-radius: 5px;
+    }
+    #End button:active{
+        background-color: #665534;
+        color: white;
+    }
+
+#pause{
+    position: absolute; top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 1;
+    display: none; justify-content: center; align-items: center;
+}
+    #pause h1{
+        font-size: 75px;
+        background-color: transparent;
+        color: rgb(228, 213, 0);
+        text-shadow: 
+        1px 1px black,
+        2px 2px black,
+        3px 3px black,
+        4px 4px black,
+        5px 5px black,
+        6px 6px black,
+        7px 7px black;
+
+        transform: scale(0);
+        animation: fadepause .5s forwards;
+    }
+
+    @keyframes fadepause{
+        from{
+            transform: scale(0);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+
+.scores{
+    position: absolute;
+    font-family: cursive; font-weight: 900;
+    color:white;
+    background-color: #d2bd98;
+    padding: 20px; font-size: 30px;
+    border-radius: 10px; margin:10px;
+}
+#score{
+    left: 0;
+    top:0;
+}
+#snakelenght{
+    left: 0;
+    top: 14%;
+}
+#speed{
+    right: 0;
+    top: 0;
+}
+#bonuscollected{
+    right: 0;
+    top: 14%;
+}
+#abilitybar{
+    position: absolute; border-radius:10px;
+
+    display: flex; justify-content: center; align-items:center ;
+    top: 18px; left:50%; transform:translate(-50%,-50%);
+    margin: 0;
+    width: 600px;
+    overflow: hidden;
+    padding: 5px;
+    background-color:rgb(202, 202, 202);
+}
+#bar{
+    height: 20px;
+    width: 100%;
+    border-radius:10px ;
+    background-color: rgb(255, 0, 191);
+    transform-origin:left;
+    transition: transform .2s;
+}
+
+@media screen and (min-width:1315px){
+    #snakegame{
+        transform:scale(.98);
+    }
+    #abilitybar{
+        top: 8px;
+    }
+}
+@media screen and (max-width:1220px){
+    .scores{
+        font-size: 20px; font-weight: 500;
+    }
+}
+
+@media screen and (max-width:1035px){
+    #snakegame{
+        top: 8px;
+        transform: scale(.9);
+    }
+    .scores{
+        position: static;
+        font-size: 20px; font-weight: 500;
+    }
+    .scorecont{
+        position: absolute; bottom: 0;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+    }
+
+}

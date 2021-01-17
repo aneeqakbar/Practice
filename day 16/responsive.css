@@ -1,0 +1,120 @@
+.dark{
+    --bg: #020202;
+    --secondary: #cbcfd8;
+    --primary: #1b1a1a;
+    --primary3: #292929;
+    --primary1: #232731d5;
+    --secondary1: #2f3642;
+    --text:#f1f6f9 ;
+    --text2:rgb(255, 255, 255) ;
+    --slide: brightness(.6);
+}
+
+@media screen and (max-width:1000px){
+    nav{
+        height: 7rem;
+        flex-direction: column;
+        flex-direction: column-reverse;
+    }
+    .nav-brand{
+        margin: auto; margin-top: 1rem;
+    }
+    .nav-brand img {   
+        width:5rem; height: 4rem; 
+    }
+    nav ul {
+        height: 3rem;
+    }
+    #themebtn{
+        margin-left: auto; margin-right: 1rem;
+    }
+    
+    /* HEQADER */
+    
+    .headertext h1{
+        font-size: 3rem;
+    }
+    .headertext p{
+        font-size: .8rem;
+    }
+    header{
+        clip-path: polygon(0% 0%, 0% 65%, 50% 90%, 100% 65%, 100% 0%);
+    }
+
+    /* SIDENAV */
+
+    #sidenav h1{
+        font-size: 2rem;
+    }
+    #sidenav ul li a{
+        font-size: 1rem;
+    }
+    #btnside{
+        font-size: 1.2rem;
+    }
+
+    /* CONTAINER */
+
+    .container1 h2{
+        font-size: 3rem;
+    }
+    .container1 p{
+        font-size: 1rem;
+    }
+    .main-card img{
+        width: 150px;
+        height: 150px;
+    }
+
+    /* CONTACT BODY */
+
+    #contact img{
+        width: 14rem;
+    }
+
+    #contin, #contup{
+        width: 45%;
+    }
+    .contbtnbody{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width:890px){
+    /* HEADER */
+
+    .headertext h1, .headertext p{
+        width: 80%; 
+    }
+
+    /* SIDENAV */
+
+    #sidenav ul h1{
+        font-size: 1.8rem;
+    }
+    #btnside{
+        width: 1rem;
+        font-size: 1.2rem;
+    }
+
+    /* CONTAINER */
+    .container1{
+        /* height: 100%; */
+    }
+    .container1 h2{
+        font-size: 3rem;
+    }
+    .container1 p{
+        font-size: 1rem;
+    }
+    .main-card{
+        width: 48%;
+        margin-bottom: 20px;
+    }
+    .main-card img{
+        width: 220px;
+        height: 220px;
+    }
+}
+

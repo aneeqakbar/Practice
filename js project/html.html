@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule|2020| by Ak</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav-bar">
+        <div id="logo"></div>
+    </nav>
+
+    <div id="Table_cont" class="center">
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>ToDo</th>
+                <th>Time</th>
+                <div id="alarm"></div>
+            </tr>
+            <tr>
+                <td>Study</td>
+                <td>Study programming</td>
+                <td>8:00pm</td>
+            </tr>
+            <tr>
+                <td>Lecture</td>
+                <td>Take Lecture</td>
+                <td>10:00pm</td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="customise" class="center">
+        <button id="add">Add</button>
+        <button id="remove">Remove</button>
+    </div>
+
+    <div id="promt">
+        <div id="promt_menu" class="center">
+            <form action="">
+                <label for="name">Name:</label>
+                <input type="text" name="name" id="name">
+                <label for="description">Description:</label>
+                <textarea name="description" id="description" cols="60" rows="5"></textarea>
+                <input type="time" name="time">
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+<script src="./script.js"></script>
+</body>
+</html>

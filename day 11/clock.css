@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --year: #020202;
+    --month: #52057b;
+    --day: #892cdc;
+    --hour: #d72323;
+    --minute: #8f0c0c;
+    --second: rgb(110, 10, 10);
+}
+section{
+    display: grid;
+    height: 100vh;
+    grid-template-areas: 
+    "year year month month"
+    "year year day day"
+    "hour minute second space"
+    ;
+}
+#space{
+    color: rgb(20, 20, 20);
+    font-size: 1.6rem;
+    font-weight: bolder;
+    position: relative;
+    background-color: #ececec;
+}
+div{
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verticall{
+    font-family: 'Anton', sans-serif;
+    color: white;
+    user-select: none;
+}
+
+p{
+    font-size: 2rem;
+}
+    #year{
+        height: 100%;
+        grid-area: year;
+        background-color: var(--year);
+        font-size: 14rem;
+    }
+
+    #Month{
+        background-color: var(--month);
+        grid-area: month;
+        height: 100%;
+        font-size: 8rem;
+        letter-spacing: 5px;
+    }
+
+    #Day{
+        background-color: var(--day);
+        grid-area: day;
+        height: 100%;
+        font-size: 8rem;
+        letter-spacing: 5px;
+    }
+
+    #Hour{
+        background-color: var(--hour);
+        grid-area: hour;
+        height: 100%;
+        font-size: 4rem;
+    }
+
+    #Minute{
+        background-color: var(--minute);
+        grid-area: minute;
+        height: 100%;
+        font-size: 4rem;
+    }
+
+    #Second{
+        background-color: var(--second);
+        grid-area: second;
+        height: 100%;
+        font-size: 4rem;
+    }
+    
